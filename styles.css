@@ -1,0 +1,478 @@
+/* Font Import */
+@font-face {
+    font-family: 'BruceForeverRegular-X3jd2';
+    src: url('./Code in the Dark/fonts/leelawadee-ui.ttf') format('woff2'),
+         url('./Code in the Dark/fonts/leelawadee-ui.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #18141A;
+    font-family: Arial, sans-serif; /* Updated font-family */
+}
+
+.header {
+    background-color: #18141A;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    margin: 0 auto; /* Center the navigation links */
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    margin: 0 40px; /* Increase the margin between the links */
+    position: relative;
+}
+
+.navigation a::after {
+    content: url('./Code in the Dark/assets/navbar/dropdownarrow.png'); /* Use your dropdown icon image */
+    margin-left: 5px;
+}
+
+.buttons {
+    margin-right: 20px; /* Increase the space between the buttons */
+}
+
+.button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.button-transparent {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.button-red {
+    background-color: #FF2D55;
+    color: white;
+}
+
+/* Swiper Slider Styles */
+.swiper-container2 {
+    width: 100%;
+    height: 80%;
+}
+/* Swiper Slider Styles */
+.swiper-container {
+    width: 100%;
+    height: 80vh;
+}
+
+.swiper-slide {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+    padding-left: 5%;
+}
+
+.swiper-slide video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.slide-content {
+    position: relative;
+    max-width: 500px;
+    text-align: left;
+    z-index: 1;
+}
+
+.slide-content h1 {
+    font-size: 4rem;
+    margin: 0;
+    font-family: 'BruceForeverRegular-X3jd2', Arial, sans-serif; /* Updated font-family */
+}
+
+.slide-content p {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.slide-content .join-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    color: white;
+    background-color: #FF2D55;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.slide-content .join-button:hover {
+    background-color: #e02449;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: #FF2D55;
+    border: 2px solid #FF2D55;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.swiper-button-next::after, .swiper-button-prev::after {
+    font-size: 20px;
+    color: #FF2D55;
+}
+/* Custom Section Styles */
+.custom-section {
+    background-color: #18141A;
+    color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.custom-tab {
+    display: flex;
+    margin-bottom: 10px; /* Adjust the margin-bottom value as needed */
+}
+
+.custom-tab button {
+    background-color: transparent;
+    color: #FFFFFF;
+    border: none;
+    padding: 5px 5px ;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-right: 10px;
+    text-decoration: none; /* Remove default underline */
+    border-bottom: 2px solid transparent; /* Add underline */
+}
+
+.custom-tab button:hover {
+    border-bottom-color: #FF2D55; /* Change underline color on hover */
+}
+
+.custom-tab button.active {
+    border-bottom-color: #FF2D55; /* Add underline for active tab */
+}
+
+.custom-tabcontent {
+    display: none;
+}
+
+.custom-tabcontent.active {
+    display: block;
+}
+
+/* Custom Slider in Custom Section Styles */
+.custom-slider {
+    display: flex;
+    overflow: hidden; /* Hide the scrollbar */
+    width: 100%; /* Cover the screen width */
+}
+
+.custom-slider .swiper-wrapper {
+    display: flex;
+    width: auto; /* Adjusted to fit the content */
+}
+
+.custom-slide {
+    flex: 0 0 auto;
+    scroll-snap-align: center;
+    position: relative;
+    margin-right: 20px; /* Space between slides */
+}
+
+.custom-slide:last-child {
+    margin-right: 0; /* Remove margin from the last slide */
+}
+
+.custom-slide img {
+    width: 100%;
+
+    max-width: 300px; /* Adjust image width as needed */
+    border-radius: 10px;
+}
+
+/* Updated CSS */
+.slide-content {
+    position: relative;
+    width: 100%;
+    padding: 0; /* Remove padding to align the image to the top-left corner */
+}
+
+.slide-content img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+}
+
+.custom-event-content {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+}
+
+.custom-event-content h2,
+.custom-event-content p {
+    margin: 0;
+}
+
+.custom-join-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #FF2D55;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.custom-live-now {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 5px 10px;
+    border-radius: 3px;
+    color: white;
+    font-size: 12px;
+}
+
+.container1 {
+    margin-top: 20%;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('girlfuturisticimage.png');
+    /* Specify the correct path to your background image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Ensure full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container1 .image-text {
+    color: #F7F6F6;
+    text-align: center;
+    line-height: 1.5;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 22px;
+}
+
+.container1 .image-text p {
+    margin: 0; /* Remove default margins */
+}
+.container2 {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #18141A; /* Set background color of the page */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container2 {
+    display: flex;
+}
+
+.box {
+    width: 500px;
+    height: 300px;
+    margin: 0 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.box img {
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.text {
+    padding: 10px;
+    font-size: 22px; 
+    color: #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin: 0;
+}
+
+.box1 {
+    background-color: #2D265B; /* Background color for Box 1 */
+}
+
+.box2 {
+    background-color: #DD5C5C; /* Background color for Box 2 */
+}
+
+
+footer {
+    background-image: url('./Code in the Dark/assets/footer/bg-img-footer.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px 0; /* Adjust padding as needed */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.left-image {
+    text-align: center; /* Center align the content */
+}
+
+.left-image img {
+    max-width: 160px; /* Adjust the width as needed */
+    height: auto;
+    margin-bottom: 10px; /* Add some space between image and text */
+}
+
+.left-image p {
+    color: #F7F6F6; /* Set text color to white */
+    margin: 0; /* Remove default margin */
+    font-family: 'Leelawadee UI', sans-serif; /* Specify Leelawadee UI font */
+}/* Styles for additional links container */
+
+
+.additional-links-container {
+    display: flex; /* Align links horizontally */
+    align-items: center; /* Center align the links vertically */
+    margin-top: 150px; /* Adjust the upper margin as needed */
+    margin-right: 20px;
+}
+
+.additional-links {
+    color: #f7f6f6a2;
+    text-decoration: none;
+    margin-right: 40px; /* Add space between the links */
+}
+
+.additional-links a {
+    color: #f7f6f6c0;
+    text-decoration: none;
+    margin-right: 10px; /* Add space between the links */
+}
+
+
+.right-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align to the left */
+}
+
+.right-content a {
+    display: flex;
+    align-items: center;
+}
+
+.right-content img {
+    margin-left: auto; /* Push icons to the right */
+    margin-right: 5px; /* Add some space between icon and text */
+}
+
+.footer-link {
+    color: #F7F6F6;
+    text-decoration: none;
+    margin-bottom: 10px; /* Adjust the space between links */
+    display: block;
+}
+
+.footer-link i {
+    margin-left: 5px; /* Adjust the space between icon and text */
+}
+
+/* Include Leelawadee UI font */
+@font-face {
+    font-family: 'Leelawadee UI';
+    src: url('./Code in the Dark/font/leelawadee-ui.ttf') format('truetype');
+}
+/* Styles for Subscribe Section */
+.subscribe-section {
+    text-align: center;
+    margin-bottom: 20px; /* Adjust spacing */
+    font-family: 'Leelawadee UI Bold', sans-serif; /* Specify Leelawadee UI Bold font */
+}
+
+.subscribe-bar {
+    background-color: #FFFFFF; /* White background */
+    border-radius: 25px; /* Round edges */
+    padding: 10px 20px; /* Adjust padding */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin-top: 20px; /* Add margin at the top */
+}
+
+.subscribe-bar input[type="text"] {
+    border: none; /* Remove border */
+    outline: none; /* Remove outline */
+    background: none; /* Transparent background */
+    width: 180px; /* Adjust width */
+    height: 20px;
+    margin-right: 10px; /* Adjust spacing */
+}
+
+.subscribe-bar input[type="submit"] {
+    border: none; /* Remove border */
+    outline: none; /* Remove outline */
+    background-color: #18141A; /* black background */
+    color: white; /* White text */
+    padding: 8px 20px; /* Adjust padding */
+    border-radius: 5px; /* Round edges */
+    cursor: pointer; /* Cursor on hover */
+    margin-top: 10px; /* Add margin at the top */
+}
+
+/* Centering the Subscribe Section */
+.subscribe-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}

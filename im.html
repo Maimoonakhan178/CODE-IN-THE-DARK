@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Footer with Links and Icons</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Include Font Awesome CSS -->
+<style>
+    footer {
+        background-image: url('./Code in the Dark/assets/footer/bg-img-footer.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 50px 0; /* Adjust padding as needed */
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .left-image {
+        text-align: center; /* Center align the content */
+    }
+
+    .left-image img {
+        max-width: 160px; /* Adjust the width as needed */
+        height: auto;
+        margin-bottom: 10px; /* Add some space between image and text */
+    }
+
+    .left-image p {
+        color: #F7F6F6; /* Set text color to white */
+        margin: 0; /* Remove default margin */
+        font-family: 'Leelawadee UI', sans-serif; /* Specify Leelawadee UI font */
+    }
+
+    .additional-links-container {
+        display: flex; /* Align links horizontally */
+        align-items: center; /* Center align the links vertically */
+        margin-top: 160px; /* Adjust the upper margin as needed */
+        margin-right: 0px;
+    }
+
+    .additional-links {
+        color: #F7F6F6;
+        text-decoration: none;
+        margin-right: 40px; /* Add space between the links */
+    }
+
+    .additional-links a {
+        color: #F7F6F6;
+        text-decoration: none;
+        margin-right: 10px; /* Add space between the links */
+    }
+
+    .right-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Align to the left */
+    }
+
+    .right-content a {
+        display: flex;
+        align-items: center;
+    }
+
+    .right-content img {
+        margin-left: auto; /* Push icons to the right */
+        margin-right: 5px; /* Add some space between icon and text */
+    }
+
+    .footer-link {
+        color: #F7F6F6;
+        text-decoration: none;
+        margin-bottom: 10px; /* Adjust the space between links */
+        display: block;
+    }
+
+    .footer-link i {
+        margin-left: 5px; /* Adjust the space between icon and text */
+    }
+
+    /* Include Leelawadee UI font */
+    @font-face {
+        font-family: 'Leelawadee UI';
+        src: url('./Code in the Dark/font/leelawadee-ui.ttf') format('truetype');
+    }
+
+    /* Styles for Subscribe Section */
+    .subscribe-section {
+        text-align: center;
+        margin-bottom: 20px; /* Adjust spacing */
+        font-family: 'Leelawadee UI Bold', sans-serif; /* Specify Leelawadee UI Bold font */
+        display: flex; /* Set display to flex */
+        justify-content: center; /* Center horizontally */
+        align-items: left; /* Center vertically */
+        flex-direction: column; /* Stack items vertically */
+    }
+
+
+    .subscribe-bar {
+        background-color: #FFFFFF; /* White background */
+        border-radius: 25px; /* Round edges */
+        padding: 10px 20px; /* Adjust padding */
+        display: inline-block;
+    }
+
+    .subscribe-bar input[type="text"] {
+        border: none; /* Remove border */
+        outline: none; /* Remove outline */
+        background: none; /* Transparent background */
+        width: 180px; /* Adjust width */
+        height: 20px;
+        margin-right: 10px; /* Adjust spacing */
+    }
+
+    .subscribe-bar input[type="submit"] {
+        border: none; /* Remove border */
+        outline: none; /* Remove outline */
+        background-color: #18141A; /* black background */
+        color: white; /* White text */
+        padding:8px 20px; /* Adjust padding */
+        border-radius: 5px; /* Round edges */
+        cursor: pointer; /* Cursor on hover */
+    }
+
+</style>
+</head>
+<body>
+
+<footer>
+    <div class="footer-content">
+        <div class="left-image">
+            <img src="./Code in the Dark/assets/footer/shape-ball.png" alt="Left Image">
+            <p>© 2024. All rights reserved</p>
+        </div>
+        <!-- Subscribe Section -->
+        <div class="subscribe-section">
+            <p style="font-family: 'Leelawadee UI Bold', sans-serif;">Subscribe</p>
+            <div class="subscribe-bar">
+                <input type="text" placeholder="Enter your email address">
+                <input type="submit" value="Subscribe">
+            </div>
+        </div>
+        <!-- End Subscribe Section -->
+        <div class="additional-links-container">
+            <a href="#" class="additional-links">Privacy Policy</a>
+            <a href="#" class="additional-links">Terms of Use</a>
+            <a href="#" class="additional-links">Sales & Pricing</a>
+            <a href="#" class="additional-links">Legal</a>
+            <a href="#" class="additional-links">Sitemap</a>
+        </div>
+        <div class="right-content">
+            <a href="#" class="footer-link">About<img src="./Code in the Dark/assets/footer/githubicon.png" alt="Info Circle Icon"></a>
+            <a href="#" class="footer-link">Register <img src="./Code in the Dark/assets/footer/figmaicon.png" alt="User Plus Icon"></a>
+            <a href="#" class="footer-link">Contact us <img src="./Code in the Dark/assets/footer/instagramicon.png" alt="Phone Icon"></a>
+            <a href="#" class="footer-link">Team <img src="./Code in the Dark/assets/footer/twittericon.png" alt="Users Icon"></a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
